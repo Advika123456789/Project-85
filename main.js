@@ -114,7 +114,7 @@ function car1_up()
     if(car1_y >=0)
     {
        car1_y =car1_y - 10;
-        console.log("When up arrow is pressed = " + car1_x + "-" +car_y);
+        console.log("When up arrow is pressed = " + car1_x + "-" +car1_y);
         uploadBackground();
         uploadcar1();
         uploadcar2();
@@ -123,10 +123,87 @@ function car1_up()
 
 function car1_down()
 {
-    if(car1_y >=0)
+    if(car1_y <=500)
     {
-       car1_y =car1_y - 10;
-        console.log("When up arrow is pressed = " + car1_x + "-" +car_y);
+       car1_y =car1_y + 10;
+        console.log("When up arrow is pressed = " + car1_x + "-" +car1_y);
+        uploadBackground();
+        uploadcar1();
+        uploadcar2();
+    }
+}
+
+function car1_left()
+{
+    if(car1_x >=0)
+    {
+       car1_x =car1_x - 10;
+        console.log("When up arrow is pressed = " + car1_x + "-" +car1_y);
+        uploadBackground();
+        uploadcar1();
+        uploadcar2();
+    }
+}
+
+
+function car1_right()
+{
+    if(car1_x <=850)
+    {
+        car1_x=car1_x + 10;
+        console.log("When right arrow key is pressed = " + car1_x  + "-"+car1_y);
+        uploadBackground();
+        uploadcar1();
+        uploadcar2();
+    }
+}
+
+
+
+
+function car2_up()
+{
+    if(car2_y >=0)
+    {
+       car2_y =car2_y - 10;
+        console.log("When up arrow is pressed = " + car2_x + "-" +car2_y);
+        uploadBackground();
+        uploadcar1();
+        uploadcar2();
+    }
+}
+
+function car2_down()
+{
+    if(car2_y <=500)
+    {
+       car2_y =car2_y + 10;
+        console.log("When up arrow is pressed = " + car2_x + "-" +car2_y);
+        uploadBackground();
+        uploadcar1();
+        uploadcar2();
+    }
+}
+
+function car2_left()
+{
+    if(car2_x >=0)
+    {
+       car2_x =car2_x - 10;
+        console.log("When up arrow is pressed = " + car2_x + "-" +car2_y);
+        uploadBackground();
+        uploadcar1();
+        uploadcar2();
+    }
+}
+
+
+function car2_right()
+{
+    if(car2_x <=850)
+    {
+        car2_x=car2_x + 10;
+        console.log("When right arrow key is pressed = " + car2_x  + "-"+car2_y);
         uploadBackground();
         uploadcar1();
         uploadcar2();
